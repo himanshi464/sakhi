@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakhi - Women's Safety App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sakhi</h1>
+        <p>Your safety, our priority</p>
+    </header>
+
+    <!-- Login Portal -->
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Google Email ID:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="fingerprint">Fingerprint (for demo, use a password):</label>
+            <input type="password" id="fingerprint" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section id="contacts" style="display: none;">
+        <h2>Emergency Contacts</h2>
+        <form id="contactsForm">
+            <label for="contact1">Contact 1:</label>
+            <input type="text" id="contact1" required>
+            <label for="contact2">Contact 2:</label>
+            <input type="text" id="contact2" required>
+            <label for="contact3">Contact 3:</label>
+            <input type="text" id="contact3" required>
+            <label for="contact4">Contact 4:</label>
+            <input type="text" id="contact4" required>
+            <label for="contact5">Nearest Police Station:</label>
+            <input type="text" id="contact5" required>
+
+            <button type="submit">Save Contacts</button>
+        </form>
+    </section>
+
+    <!-- SOS Feature -->
+    <section id="sos" style="display: none;">
+        <h2>Emergency SOS</h2>
+        <button id="sosButton">SOS</button>
+        <p>Press the button in case of emergency to alert your contacts.</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
